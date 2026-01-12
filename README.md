@@ -1,18 +1,18 @@
-# 🚀 AI & Machine Learning Internship Tasks
+# AI & Machine Learning Internship Tasks
 
 Welcome to my AI/ML Internship repository! This collection features three key projects focusing on Data Analysis, Time Series Forecasting, and Medical Diagnostic Classification. These tasks demonstrate my proficiency in Python, Data Visualization, and Scikit-Learn.
 
 ---
 
-## 👨‍💻 Author
+## Author
 **Arsalan Khatri** *Founder, AK Deep Knowledge* *BS(AI) Graduate & Developer*
 
 ---
 
 ## 📂 Table of Contents
-1. [Task 1: Iris Dataset Exploration](#task-1-exploring-and-visualizing-a-simple-dataset)
-2. [Task 2: Stock Price Prediction](#task-2-predict-future-stock-prices-short-term)
-3. [Task 3: Heart Disease Prediction](#task-3-heart-disease-prediction)
+1. [Task 1: Iris Dataset Exploration](https://github.com/arsalan-khatri/AI-ML-internship-tasks/tree/main/task1)
+2. [Task 2: Stock Price Prediction](https://github.com/arsalan-khatri/AI-ML-internship-tasks/tree/main/task2)
+3. [Task 3: Heart Disease Prediction](https://github.com/arsalan-khatri/AI-ML-internship-tasks/tree/main/task3)
 
 ---
 
@@ -72,9 +72,3 @@ To develop a binary classification model that assesses whether a person is at ri
     * **Confusion Matrix:** To minimize false negatives.
     * **ROC Curve:** To check model performance thresholds.
 
----
-
-## ⚙️ How to Run
-1. Clone this repository:
-   ```bash
-   git clone [https://github.com/arsalan-khatri/AI-ML-Internship-Tasks.git](https://github.com/arsalan-khatri/AI-ML-Internship-Tasks.git)
