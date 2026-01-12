@@ -4,8 +4,15 @@ Welcome to my AI/ML Internship repository! This collection features three key pr
 
 ---
 
-## Author
-**Arsalan Khatri** *Founder, AK Deep Knowledge* *BS(AI) Graduate & Developer*
+## 👨‍💻 Author
+
+**Arsalan Khatri**
+*Google Certified Data Analyst | Data Scientist | ML/DL Engineer | AI Engineer*
+
+I am a passionate AI developer and recent graduate specializing in Machine Learning, Web Development, and Automation. My work focuses on bridging the gap between complex AI theories and real-world applications.
+
+* 🌐 **LinkedIn:** [arsalan-khatri](https://www.linkedin.com/in/arsalan-khatri/)
+* 💻 **GitHub:** [arsalan-khatri](https://github.com/arsalan-khatri)
 
 ---
 
