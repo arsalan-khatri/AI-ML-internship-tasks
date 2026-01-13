@@ -4,7 +4,7 @@ Welcome to my AI/ML Internship repository! This collection features three key pr
 
 ---
 
-## 👨‍💻 Author
+## About Me
 
 **Arsalan Khatri**
 *Google Certified Data Analyst | Data Scientist | ML/DL Engineer | AI Engineer*
