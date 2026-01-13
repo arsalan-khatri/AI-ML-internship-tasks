@@ -1,52 +1,46 @@
-# Task 1: Machine Learning Project 🤖
+# Task 1: Iris Flower Data Analysis & Visualization 🌸
 
 ## 📌 Project Overview
-This repository contains the solution for **Task 1** of my AI/ML Internship. The goal of this project was to build a Machine Learning model to analyze the dataset and make predictions based on the given features.
+This project is part of my AI/ML Internship (Task 1). The objective is to perform **Exploratory Data Analysis (EDA)** on the famous **Iris Dataset**. The analysis helps in understanding the underlying structure of the data, detecting outliers, and visualizing relationships between features like Sepal Length and Sepal Width.
 
-**Notebook File:** [task1.ipynb](task1/task1.ipynb)
+**Notebook File:** [task1.ipynb](task1.ipynb)
 
 ## 📂 Dataset Details
-- **Source:** [Kaggle / Internship Provider]
-- **Target Variable:** The model predicts `[Yahan likhein kya predict kiya: e.g., Survival Status / Flower Species / Price]`
-- **Key Features:** The dataset includes features like `[Column Names e.g., Age, Gender, Income, etc.]`.
+- **Dataset Name:** Iris Dataset (Loaded via Seaborn)
+- **Total Records:** 150 Rows, 5 Columns
+- **Features:**
+  - `sepal_length`
+  - `sepal_width`
+  - `petal_length`
+  - `petal_width`
+  - `species` (Target Class: Setosa, Versicolor, Virginica)
 
 ## 🛠️ Tech Stack Used
-- **Python** (Core Language)
-- **Pandas** (Data Manipulation)
-- **NumPy** (Numerical Operations)
-- **Matplotlib & Seaborn** (Data Visualization)
-- **Scikit-Learn** (Machine Learning Modeling)
+- **Python**: Core programming language.
+- **Pandas**: For data loading, inspection, and statistical summary.
+- **Seaborn & Matplotlib**: For data visualization (Scatter plots, Box plots, Histograms).
 
-## ⚙️ Steps Implemented in this Task
-In this notebook, I have performed the following steps:
+## ⚙️ Key Steps Performed
+In this notebook, I executed the following Data Analysis steps:
 
-1.  **Data Loading & Inspection**:
-    - Loaded the dataset using Pandas.
-    - Checked for missing values and data types.
+### 1. Data Loading & Understanding
+- Loaded the dataset utilizing `sns.load_dataset('iris')`.
+- Verified the data dimensions using `.shape` (Result: **150 rows, 5 cols**).
+- Inspected the first few records using `.head()`.
 
-2.  **Data Preprocessing**:
-    - Handled missing values (Imputation/Removal).
-    - Encoded categorical variables (converted text to numbers).
-    - Scaled features for better model performance.
+### 2. Statistical Analysis
+- Generated summary statistics (Mean, Std, Min, Max) using `df.describe()`.
+- Checked for missing values and data types using `df.info()`.
+- **Result:** No null values found; data is clean.
 
-3.  **Exploratory Data Analysis (EDA)**:
-    - Visualized correlations using Heatmaps.
-    - Analyzed feature distributions using Histograms/Boxplots.
+### 3. Data Visualization (EDA)
+I created the following plots to analyze the data:
 
-4.  **Model Building**:
-    - Split the data into **Training** and **Testing** sets.
-    - Trained the model using **[Model Name e.g., Logistic Regression / Decision Tree]**.
+- **Scatter Plot:** Analyzed the relationship between `Sepal Length` and `Sepal Width`, colored by Species. This showed clear clustering of different species.
+- **Histograms:** visualized the frequency distribution of all features.
+- **Box Plots:** Used to detect outliers in the dataset.
 
-5.  **Model Evaluation**:
-    - Evaluated performance using **Accuracy Score**, **Precision**, and **Recall**.
-    - Generated a Confusion Matrix to visualize predictions.
-
-## 📊 Results
-- **Model Used:** [e.g., Logistic Regression]
-- **Accuracy Achieved:** [e.g., 85%]
-- **Key Insight:** [Ek line likhein jo data se pata chali, e.g., "Gender had the highest impact on survival rate."]
-
-## 🚀 How to Run
-1. Clone the repository:
-   ```bash
-   git clone [https://github.com/arsalan-khatri/AI-ML-internship-tasks.git](https://github.com/arsalan-khatri/AI-ML-internship-tasks.git)
+## 📊 Visual Insights
+*(Note: These are descriptions of the generated plots)*
+1. **Correlation:** The Scatter plot reveals that specific species (like *Setosa*) are easily separable based on sepal dimensions.
+2. **Outliers:** The Box plot analysis helps identify slight outliers in the `sepal_width` feature.
