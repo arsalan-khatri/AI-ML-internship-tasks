@@ -1,52 +1,42 @@
-# Task 1: Machine Learning Project 🤖
+# Task 2: Stock Market Prediction & Forecasting
 
-## 📌 Project Overview
-This repository contains the solution for **Task 1** of my AI/ML Internship. The goal of this project was to build a Machine Learning model to analyze the dataset and make predictions based on the given features.
+## 1. Task Objective
+The objective of this project was to build a Machine Learning model to predict the **future closing price** of a stock (Apple Inc.) based on its historical data. The project aims to:
+- Analyze historical stock trends (2021-2026).
+- Visualize price movements and moving averages.
+- Train a regression model to forecast the *next day's* closing price.
 
-**Notebook File:** [task1.ipynb](task1/task1.ipynb)
+## 2. Dataset Used
+- **Source:** Historical Stock Data (Loaded from `data.csv`).
+- **Time Period:** January 2021 to January 2026.
+- **Total Records:** 1278 days of trading data.
+- **Key Features:**
+  - `Open`: Opening price of the day.
+  - `High`: Highest price of the day.
+  - `Low`: Lowest price of the day.
+  - `Close`: Closing price (Used to generate the Target).
+  - `Volume`: Number of shares traded.
 
-## 📂 Dataset Details
-- **Source:** [Kaggle / Internship Provider]
-- **Target Variable:** The model predicts `[Yahan likhein kya predict kiya: e.g., Survival Status / Flower Species / Price]`
-- **Key Features:** The dataset includes features like `[Column Names e.g., Age, Gender, Income, etc.]`.
+## 3. Methodologies & Models Applied
+### Data Preprocessing
+- **Cleaning:** Handled missing values and removed commas from the 'Volume' column.
+- **Type Conversion:** Converted `Date` to datetime objects and numeric columns to float.
+- **Feature Engineering:**
+  - Calculated **50-Day Moving Average (MA50)** for trend analysis.
+  - Created a `Next_Close` target variable by shifting the closing price backwards by 1 day (predicting $t+1$ using data from $t$).
 
-## 🛠️ Tech Stack Used
-- **Python** (Core Language)
-- **Pandas** (Data Manipulation)
-- **NumPy** (Numerical Operations)
-- **Matplotlib & Seaborn** (Data Visualization)
-- **Scikit-Learn** (Machine Learning Modeling)
+### Machine Learning Model
+- **Algorithm:** **Linear Regression** (`sklearn.linear_model`).
+- **Training Strategy:** Used an 80-20 Train-Test split with `shuffle=False` to maintain the chronological order of time-series data.
+- **Input Features:** `Open`, `High`, `Low`, `Volume`.
 
-## ⚙️ Steps Implemented in this Task
-In this notebook, I have performed the following steps:
+## 4. Key Results and Findings
+### Performance
+- **Model Accuracy:** The Linear Regression model achieved a score of **97.15%**, indicating a strong correlation between daily indicators and the next day's price.
 
-1.  **Data Loading & Inspection**:
-    - Loaded the dataset using Pandas.
-    - Checked for missing values and data types.
+### Insights
+- **Trend Analysis:** The 50-Day Moving Average plot showed the overall upward/downward trends, filtering out daily noise.
+- **Volatility:** Daily return analysis highlighted the market's volatility, identifying the single biggest profit day (+15.33%) and loss day (-9.25%).
 
-2.  **Data Preprocessing**:
-    - Handled missing values (Imputation/Removal).
-    - Encoded categorical variables (converted text to numbers).
-    - Scaled features for better model performance.
-
-3.  **Exploratory Data Analysis (EDA)**:
-    - Visualized correlations using Heatmaps.
-    - Analyzed feature distributions using Histograms/Boxplots.
-
-4.  **Model Building**:
-    - Split the data into **Training** and **Testing** sets.
-    - Trained the model using **[Model Name e.g., Logistic Regression / Decision Tree]**.
-
-5.  **Model Evaluation**:
-    - Evaluated performance using **Accuracy Score**, **Precision**, and **Recall**.
-    - Generated a Confusion Matrix to visualize predictions.
-
-## 📊 Results
-- **Model Used:** [e.g., Logistic Regression]
-- **Accuracy Achieved:** [e.g., 85%]
-- **Key Insight:** [Ek line likhein jo data se pata chali, e.g., "Gender had the highest impact on survival rate."]
-
-## 🚀 How to Run
-1. Clone the repository:
-   ```bash
-   git clone [https://github.com/arsalan-khatri/AI-ML-internship-tasks.git](https://github.com/arsalan-khatri/AI-ML-internship-tasks.git)
+### Future Prediction
+- The model successfully predicted the share price for **Jan 7, 2026**, to be approximately **$263.11** based on the previous day's market data.
