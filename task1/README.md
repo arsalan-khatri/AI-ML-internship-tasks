@@ -1,46 +1,30 @@
-# Task 1: Iris Flower Data Analysis & Visualization 🌸
+# Task 1: Iris Dataset Exploratory Analysis
 
-## 📌 Project Overview
-This project is part of my AI/ML Internship (Task 1). The objective is to perform **Exploratory Data Analysis (EDA)** on the famous **Iris Dataset**. The analysis helps in understanding the underlying structure of the data, detecting outliers, and visualizing relationships between features like Sepal Length and Sepal Width.
+## 1. Task Objective
+The objective of this task was to perform **Exploratory Data Analysis (EDA)** on the Iris dataset. The goal was to understand the structure of the data, identify the distribution of features (Sepal/Petal dimensions), detect outliers, and visualize the relationships between different flower species before applying any Machine Learning models.
 
-**Notebook File:** [task1.ipynb](task1.ipynb)
-
-## 📂 Dataset Details
-- **Dataset Name:** Iris Dataset (Loaded via Seaborn)
-- **Total Records:** 150 Rows, 5 Columns
+## 2. Dataset Used
+- **Dataset Name:** Iris Dataset (loaded via Seaborn)
+- **Dimensions:** 150 Rows, 5 Columns
 - **Features:**
-  - `sepal_length`
-  - `sepal_width`
-  - `petal_length`
-  - `petal_width`
-  - `species` (Target Class: Setosa, Versicolor, Virginica)
+  1. `sepal_length`
+  2. `sepal_width`
+  3. `petal_length`
+  4. `petal_width`
+  5. `species` (Target: Setosa, Versicolor, Virginica)
 
-## 🛠️ Tech Stack Used
-- **Python**: Core programming language.
-- **Pandas**: For data loading, inspection, and statistical summary.
-- **Seaborn & Matplotlib**: For data visualization (Scatter plots, Box plots, Histograms).
+## 3. Methodologies Applied
+Since this is the analysis phase, the following techniques were used instead of predictive modeling:
 
-## ⚙️ Key Steps Performed
-In this notebook, I executed the following Data Analysis steps:
+* **Data Inspection:** Used `.shape`, `.head()`, and `.info()` to check data structure and types.
+* **Statistical Summary:** Used `.describe()` to check mean, standard deviation, and quartiles.
+* **Data Visualization (Seaborn & Matplotlib):**
+    * **Scatter Plots:** To observe clustering between species based on Sepal dimensions.
+    * **Histograms:** To view the frequency distribution of data.
+    * **Box Plots:** To identify outliers in the dataset.
 
-### 1. Data Loading & Understanding
-- Loaded the dataset utilizing `sns.load_dataset('iris')`.
-- Verified the data dimensions using `.shape` (Result: **150 rows, 5 cols**).
-- Inspected the first few records using `.head()`.
-
-### 2. Statistical Analysis
-- Generated summary statistics (Mean, Std, Min, Max) using `df.describe()`.
-- Checked for missing values and data types using `df.info()`.
-- **Result:** No null values found; data is clean.
-
-### 3. Data Visualization (EDA)
-I created the following plots to analyze the data:
-
-- **Scatter Plot:** Analyzed the relationship between `Sepal Length` and `Sepal Width`, colored by Species. This showed clear clustering of different species.
-- **Histograms:** visualized the frequency distribution of all features.
-- **Box Plots:** Used to detect outliers in the dataset.
-
-## 📊 Visual Insights
-*(Note: These are descriptions of the generated plots)*
-1. **Correlation:** The Scatter plot reveals that specific species (like *Setosa*) are easily separable based on sepal dimensions.
-2. **Outliers:** The Box plot analysis helps identify slight outliers in the `sepal_width` feature.
+## 4. Key Results and Findings
+* **Data Quality:** The dataset is clean with **no null values** and contains 150 records.
+* **Species Separation:** The Scatter Plot reveals that the **Setosa** species is linearly separable from the other two species (Versicolor and Virginica), making it easy to classify.
+* **Outliers Detected:** The Box Plot analysis showed some outliers present in the `sepal_width` feature.
+* **Feature Distribution:** The histograms indicate distinct distributions for petal lengths, suggesting that petal features are very important for classification.
