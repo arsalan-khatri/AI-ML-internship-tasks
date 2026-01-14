@@ -1,5 +1,5 @@
 # AI & Machine Learning Internship Portfolio
-[DevelopersHub Corporation©](https://www.linkedin.com/company/developershub-corporation)
+## [DevelopersHub Corporation](https://www.linkedin.com/company/developershub-corporation)
 
 ![Python](https://img.shields.io/badge/Python-3.8%2B-blue)
 ![Library](https://img.shields.io/badge/Library-Scikit--Learn-orange)
