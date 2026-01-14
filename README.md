@@ -1,4 +1,4 @@
-# AI & Machine Learning Internship Portfolio 🚀
+# AI & Machine Learning Internship Portfolio
 
 ![Python](https://img.shields.io/badge/Python-3.8%2B-blue)
 ![Library](https://img.shields.io/badge/Library-Scikit--Learn-orange)
