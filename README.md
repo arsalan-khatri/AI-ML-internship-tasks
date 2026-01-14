@@ -1,9 +1,9 @@
-# AI & Machine Learning Internship Portfolio
-## [DevelopersHub Corporation](https://www.linkedin.com/company/developershub-corporation)
-
 ![Python](https://img.shields.io/badge/Python-3.8%2B-blue)
 ![Library](https://img.shields.io/badge/Library-Scikit--Learn-orange)
 ![Status](https://img.shields.io/badge/Status-Completed-green)
+
+# AI & Machine Learning Internship Portfolio
+## [DevelopersHub Corporation](https://www.linkedin.com/company/developershub-corporation)
 
 ## Overview
 Welcome to my AI/ML Internship repository! This collection showcases three distinct projects ranging from **Exploratory Data Analysis (EDA)** to **Predictive Modeling** using Regression and Classification algorithms. 
