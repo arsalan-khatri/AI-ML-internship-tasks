@@ -1,81 +1,52 @@
-# AI & Machine Learning Internship Tasks
+# AI & Machine Learning Internship Portfolio 🚀
 
-Welcome to my AI/ML Internship repository! This collection features three key projects focusing on Data Analysis, Time Series Forecasting, and Medical Diagnostic Classification. These tasks demonstrate my proficiency in Python, Data Visualization, and Scikit-Learn.
+![Python](https://img.shields.io/badge/Python-3.8%2B-blue)
+![Library](https://img.shields.io/badge/Library-Scikit--Learn-orange)
+![Status](https://img.shields.io/badge/Status-Completed-green)
 
----
+## Overview
+Welcome to my AI/ML Internship repository! This collection showcases three distinct projects ranging from **Exploratory Data Analysis (EDA)** to **Predictive Modeling** using Regression and Classification algorithms. 
 
-## About Me
+The goal of these tasks was to solve real-world problems by applying data science techniques, data visualization, and machine learning model deployment.
 
-**Arsalan Khatri**
-*Google Certified Data Analyst | Data Scientist | ML/DL Engineer | AI Engineer*
-
-I am a passionate AI developer and recent graduate specializing in Machine Learning, Web Development, and Automation. My work focuses on bridging the gap between complex AI theories and real-world applications.
-
-* **LinkedIn:** [arsalan-khatri](https://www.linkedin.com/in/arsalan-khatri/)
-* **GitHub:** [arsalan-khatri](https://github.com/arsalan-khatri)
-
----
-
-## Table of Contents
-1. [Task 1: Iris Dataset Exploration](https://github.com/arsalan-khatri/AI-ML-internship-tasks/tree/main/task1)
-2. [Task 2: Stock Price Prediction](https://github.com/arsalan-khatri/AI-ML-internship-tasks/tree/main/task2)
-3. [Task 3: Heart Disease Prediction](https://github.com/arsalan-khatri/AI-ML-internship-tasks/tree/main/task3)
+## Tech Stack Used
+- **Languages:** Python
+- **Libraries:** Pandas, NumPy, Scikit-Learn, Matplotlib, Seaborn, Joblib
+- **Tools:** Jupyter Notebook
 
 ---
 
-## Task 1: Exploring and Visualizing a Simple Dataset
+## Project Highlights
 
-### Objective
-To load, inspect, and visualize the classic Iris dataset to understand underlying data trends, feature distributions, and potential outliers.
-
-### Tech Stack
-* **Libraries:** `Pandas`, `Matplotlib`, `Seaborn`
-* **Dataset:** Iris Dataset (CSV)
-
-### Key Steps Implemented
-1.  **Data Loading:** Loaded the dataset using Pandas and inspected structure using `.shape`, `.head()`, and `.info()`.
-2.  **Statistical Summary:** Used `.describe()` to analyze mean, standard deviation, and quartiles.
-3.  **Visualization:**
-    * **Scatter Plots:** To observe relationships between Sepal/Petal dimensions.
-    * **Histograms:** To visualize the distribution of values across classes.
-    * **Box Plots:** To identify outliers in the dataset.
+| # | Project Name | Domain | Description | Key Result | Link |
+|:--:|:---|:---|:---|:---|:--:|
+| **1** | **Iris Flower Analysis** | **EDA & Viz** | A deep dive into the Iris dataset to understand feature distributions and species clustering using visualizations. | Identified clear linear separability in Setosa species. | [Task 1](./task1) |
+| **2** | **Stock Price Prediction** | **Regression** | Built a model to forecast Apple (AAPL) stock prices based on 5 years of historical data using Linear Regression. | Achieved **97.15%** Accuracy. | [Task 2](./task2) |
+| **3** | **Heart Disease Prediction** | **Classification** | Developed a "Doctor AI" system to detect heart disease risk based on patient vitals using Random Forest. | Achieved **88.52%** Accuracy with high recall. | [Task 3](./task3) |
 
 ---
 
-## Task 2: Predict Future Stock Prices (Short-Term)
+## Detailed Summaries
 
-### Objective
-To build a regression model that predicts the next day's closing price of a stock based on historical market data.
+### Task 1: Iris Data Analysis
+* **Objective:** Perform EDA to detect outliers and feature correlations.
+* **Technique:** Used Box plots, Histograms, and Scatter plots.
+* **Insight:** Detected outliers in `sepal_width` and confirmed that petal dimensions are the strongest differentiators between species.
 
-### 🛠️ Tech Stack
-* **Libraries:** `yfinance`, `Pandas`, `Scikit-Learn`, `Matplotlib`
-* **Model:** Linear Regression / Random Forest
-* **Dataset:** Real-time data fetched via Yahoo Finance API (e.g., Apple/Tesla)
+### Task 2: Stock Market Forecasting
+* **Objective:** Predict the *Next Day's* closing price.
+* **Technique:** Linear Regression with Time-Series splitting (`shuffle=False`).
+* **Feature Engineering:** Created Moving Averages (MA50) and Lag features (`shift(-1)`).
+* **Visualization:** Plotted actual vs. predicted trends to validate model performance.
 
-### Key Steps Implemented
-1.  **Data Fetching:** Retrieved historical stock data using the `yfinance` API.
-2.  **Feature Engineering:** Used features like `Open`, `High`, `Low`, and `Volume` to predict the target `Close` price.
-3.  **Model Training:** Trained the model on historical trends.
-4.  **Evaluation:** Plotted **Actual vs. Predicted** prices to visualize the model's accuracy on unseen data.
+### Task 3: Heart Disease Classification ("Doctor AI")
+* **Objective:** Classify patients as Healthy or At-Risk.
+* **Technique:** Random Forest Classifier with stratified splitting.
+* **Feature:** Built a custom function `check_patient()` that simulates a doctor's report, providing a risk percentage for individual patients.
 
 ---
 
-## Task 3: Heart Disease Prediction
-
-### Objective
-To develop a binary classification model that assesses whether a person is at risk of heart disease based on medical indicators.
-
-### Tech Stack
-* **Libraries:** `Pandas`, `Scikit-Learn`, `Seaborn`
-* **Model:** Logistic Regression / Decision Tree Classifier
-* **Dataset:** Heart Disease UCI Dataset (Kaggle)
-
-### Key Steps Implemented
-1.  **Data Cleaning:** Handled missing values and preprocessed the data.
-2.  **Exploratory Data Analysis (EDA):** Analyzed correlations between age, cholesterol levels, and heart disease risk.
-3.  **Modeling:** Trained a classification model to predict risk (1 = Risk, 0 = No Risk).
-4.  **Evaluation Metrics:**
-    * **Accuracy Score**
-    * **Confusion Matrix:** To minimize false negatives.
-    * **ROC Curve:** To check model performance thresholds.
-
+## How to Run Locally
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/arsalan-khatri/AI-ML-internship-tasks.git
